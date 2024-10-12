@@ -1,0 +1,934 @@
+
+:root
+{
+    --bg-pink:pink;
+    --bg-0:rgb(232, 41, 124);
+    --bg-1:whitesmoke;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-color: var(--bg-1);
+}
+
+button,li,i
+{
+    cursor: pointer;
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    padding: 0 50px;
+    overflow: hidden;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+    z-index: 998;
+    font-size: 1.2em;
+    font-style: normal;
+    background-color: white;
+    position: relative;
+}
+
+header img
+{
+    height: 50px;
+}
+
+.nav__list, .header__iconButton-container
+{
+    display: flex;
+    align-items: center;
+}
+
+.nav__list
+{
+    margin-right: 20px;
+}
+
+.header__iconButton-container button
+{
+    padding: 10px;
+    font-weight: bold;
+    border: solid black 1px;
+}
+
+.register-btn
+{
+    background-color: var(--bg-0);
+    color: white;
+}
+
+.nav__list li
+{
+    padding: 10px;
+    list-style-type: none;
+}
+
+.fa-shopping-cart
+{
+    margin-right: 20px;
+}
+
+.nav__list li:hover
+{
+    background-color: var(--bg-pink);
+}
+
+.hero
+{
+    height: 500px;
+    background-image: url(images/heroImg.jpg);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-blend-mode: multiply;
+}
+
+.heroText-container
+{
+    color: white;
+    padding: 20px;
+    width: 30%;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.heroText-container p
+{
+    margin: 10px 0;
+}
+
+.hero button
+{
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    font-size: large;
+    border: solid 1px white;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.hero img
+{
+    height: 400px;
+    border-radius: 50px;
+    margin-right: 30px;
+}
+
+.heading-title
+{
+    font-weight: normal;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.boquet-section
+{
+    height: 430px;
+}
+
+.boquet-card
+{
+    width: 200px;
+    height: 320px;
+    border: solid 1px rgb(155, 155, 155);
+    margin:0 10px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.boquet-card:hover
+{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.boquet-card img
+{
+    width: 200px;
+    height: 270px;
+    margin: 0;
+    border: none;
+}
+
+.boquet-card h3
+{
+    width: inherit;
+    text-align: center;
+    font-size: 1.3em;
+    margin-top: 10px;
+}
+
+.boquet-binary-container, .boquet-container
+{
+    display: flex;
+}
+
+.boquet-container
+{
+    justify-content: center;
+}
+
+.aboutUs-section
+{
+    display: flex;
+    justify-content: center;
+}
+
+.aboutUs-title
+{
+    width: 90%;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.aboutUs-section
+{
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.aboutUs-section div
+{
+    background-color: white;
+    padding-left: 30px;
+    width: 40%;
+    padding: 30px;
+}
+
+.aboutUs-section img
+{
+    width: 550px;
+    margin-left: 50px;
+    border-top-left-radius: 50px;
+}
+
+.aboutUs-section p
+{
+    width: 90%;
+}
+
+.flower-section
+{
+    height: 400px;
+    background-image: url(images/bgFlower.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    display: flex;
+    align-items: center;
+}
+
+.flower-section-container
+{
+    color: white;
+    padding: 20px;
+    width: 30%;
+    margin-left: 80px;
+    margin-right: 50px;
+}
+
+.flower-section-container p
+{
+    padding: 20px 0;
+}
+
+.flower-section-container button
+{
+    padding: 10px;
+    border-radius: 20px;
+    font-size: large;
+    background-color: transparent;
+    border: solid 1px white;
+    color: white;
+}
+
+.preview-flower-container
+{
+    display: flex;
+    margin-right: 30px;
+}
+
+.preview-flower:hover
+{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.preview-flower
+{
+    width: 200px;
+    height: 320px;
+    background-color: white;
+    margin: 0 10px;
+    border: solid 1px rgb(124, 122, 123);
+    overflow: hidden;
+}
+
+.preview-flower img
+{
+    width: 200px;
+    height: 270px;
+    margin: 0;
+    border: none;
+}
+
+
+.preview-flower h3
+{
+    width: inherit;
+    text-align: center;
+    font-size: 1.3em;
+    margin-top: 10px;
+}
+
+.assurance-container
+{
+    display: block;
+    justify-content: center;
+    border: solid 1px rgb(155, 155, 155);
+    width: 40%;
+    margin: 10px;
+    background-color: white;
+}
+
+.assurance-section
+{
+    display: flex;
+    justify-content: center;
+}
+
+.assurance-binary-container
+{
+    width: 100%;
+    height: inherit;
+}
+
+.assurance-binary-container img
+{
+    width: 100%;
+    height: 300px;
+}
+
+.assurance-binary-container div 
+{
+    width: 90%;
+    margin: auto;
+}
+
+.assurance-binary-container div p
+{
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+footer 
+{
+    margin-top: 50px;
+    background-color: rgb(45, 1, 23);
+    color: white;
+    padding: 50px;
+}
+
+.footer-container
+{
+    display: flex;
+    margin-top: 60px;
+}
+
+.footer-container div
+{
+    width: 500px;
+}
+
+.footer-container div p
+{
+    font-weight: normal;
+    padding: 10px 50px;
+    font-size: 1.3em;
+}
+
+.footer-list 
+{
+    list-style-type: none;
+    margin-left: 50px;
+    font-size: 1.3em;
+}
+
+.footer-icons
+{
+    font-size: 2.3em;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-icons i
+{
+    margin: 0 5px;
+    padding-top: 10px;
+}
+
+.creditation
+{
+    text-align: center;
+    font-size: 1em;
+    margin-top: 50px;
+}
+
+.creditation p
+{
+    margin-top: 10px;
+}
+
+.fa-bars
+{
+    display: none;
+}
+
+@media (max-width:1050px)
+{
+    .hero img 
+    {
+        height: 300px;
+    }
+
+    .aboutUs-section
+    {
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .aboutUs-section img
+    {
+        width: 670px;
+        margin: auto;
+        border-radius: 0;
+    }
+
+    .aboutUs-section div
+    {
+        width: 605px;
+        margin: auto;
+    }
+
+    .aboutUs-section div h1
+    {
+        width: 100%;
+    }
+
+    .aboutUs-section p
+    {
+        width: 100%;
+    }
+
+    .boquet-container
+    {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .boquet-section
+    {
+        height: max-content;
+        padding-bottom: 50px;
+    }
+
+    .boquet-container
+    {
+        margin: auto;
+    }
+
+    .boquet-binary-container
+    {
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .boquet-card
+    {
+        width: 300px;
+        height: 400px;
+    }
+
+    .boquet-card img
+    {
+        width: 300px;
+        height: 350px;
+    }
+
+    .flower-section
+    {
+        flex-direction: column;
+        height: 570px;
+    }
+
+    .flower-section-container
+    {
+        order: 1;
+    }
+
+    .preview-flower
+    {
+        width: 170px;
+        height: 270px;
+        margin: 0;
+        margin: 0 5px;
+        margin-top: 50px;
+    }
+
+    .preview-flower img
+    {
+        width: 170px;
+        height: 220px;
+    }
+
+    .flower-section-container
+    {
+        width: 80%;
+        margin: auto;
+    }
+
+    .assurance-section
+    {
+        flex-direction: column;
+    }
+
+    .assurance-container
+    {
+        width: 80%;
+        margin: auto;
+        margin-top: 15px;
+    }
+
+} 
+
+
+@media (max-width:835px)
+{
+    .fa-bars
+    {
+        display: block;
+    }
+
+    nav,.loginRegster-container
+    {
+        display: none;
+    }
+
+    .modal-nav,.modal-loginRegister
+    {
+        display: block;
+    }
+
+    .modal-nav
+    {
+        margin-top: 10px;
+    }
+
+    .modal-nav ul li 
+    {
+        padding: 5px;
+        border-radius: 15px;
+        margin: 5px 0;
+        padding-left: 20px;
+    }
+
+    .modal-loginRegister
+    {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0;
+        border-bottom:solid 2px rgb(186, 184, 184);
+    }
+
+    .modal-nav ul li:hover
+    {
+        background-color: var(--bg-pink);
+    }
+
+    .modal-loginRegister button 
+    {
+        width: 100%;
+        margin: auto;
+        font-size: 1.3em;
+        padding: 5px;
+        margin: 2px 0;
+        border-radius: 15px;
+    }
+
+    .fa-bars,.fa-shopping-cart
+    {
+        border: solid 1px gray;
+        padding: 10px;
+    }
+
+    header
+    {
+        padding: 0 20px;
+    }
+
+    .hero
+    {
+        flex-direction: column;
+        height: 400px;
+    }
+
+    .hero img
+    {
+        display: none;
+    }
+
+    .fa-shopping-cart
+    {
+        margin: 0;
+    }
+
+    .heroText-container
+    {
+        width: 80%;
+        order: 1;
+    }
+
+    .aboutUs-section
+    {
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .aboutUs-section img
+    {
+        width: 570px;
+        margin: auto;
+        border-radius: 0;
+    }
+
+    .aboutUs-section div
+    {
+        width: 505px;
+        margin: auto;
+    }
+
+    .aboutUs-section div h1
+    {
+        width: 100%;
+    }
+
+    .aboutUs-section p
+    {
+        width: 100%;
+    }
+
+    .boquet-container
+    {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .boquet-section
+    {
+        height: max-content;
+        padding-bottom: 50px;
+    }
+
+    .boquet-container
+    {
+        margin: auto;
+    }
+
+    .boquet-binary-container
+    {
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .boquet-card
+    {
+        width: 270px;
+        height: 370px;
+    }
+
+    .boquet-card img
+    {
+        width: 270px;
+        height: 320px;
+    }
+
+    .footer-container
+    {
+        flex-direction: column;
+    }
+
+    .footer-container div
+    {
+        width: 300px;
+    }
+
+    .footer-icons
+    {
+        margin-bottom: 50px;
+    }
+} 
+
+@media (max-width:600px) 
+{
+    .aboutUs-section
+    {
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .aboutUs-section img
+    {
+        width: 450px;
+        margin: auto;
+        border-radius: 0;
+    }
+
+    .aboutUs-section div
+    {
+        width: 390px;
+        margin: auto;
+    }
+
+    .boquet-container
+    {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .boquet-section
+    {
+        height: max-content;
+        padding-bottom: 50px;
+    }
+
+    .boquet-container
+    {
+        margin: auto;
+    }
+
+    .boquet-binary-container
+    {
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .boquet-card
+    {
+        width: 170px;
+        height: 270px;
+    }
+
+    .boquet-card img
+    {
+        width: 170px;
+        height: 220px;
+    }
+
+    .flower-section
+    {
+        flex-direction: column;
+        height: 570px;
+    }
+
+    .preview-flower
+    {
+        width: 170px;
+        height: 270px;
+        margin: 0;
+        margin: 0 5px;
+        margin-top: 50px;
+    }
+
+    .preview-flower img
+    {
+        width: 170px;
+        height: 220px;
+    }
+
+    .flower-section-container
+    {
+        width: 80%;
+        margin: auto;
+    }
+
+    .previewNone
+    {
+        display: none;
+    }
+ 
+}
+
+.modal-navigation
+{
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top:0;
+    left: 0;
+    z-index: 999;
+    color: black;
+    display: none;
+    transition: ease-in 0.3s;
+}
+
+.modal-navigation-content
+{
+    background-color: white;
+    position: absolute;
+    width:200px;
+    height: 100vh;
+    padding: 0 20px;
+    box-shadow:inset 1px 2px rgba(98, 98, 98, 0.5);
+    animation: popSlide-from-left 0.2s ease-in forwards;
+}
+
+.modal-navigation-content ul li
+{
+    list-style-type: none;
+    font-size: 1.3em;
+}
+
+#menuBtn2
+{
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.modal-navigation-content i
+{
+    width: 17px;
+}
+
+.loginModal-container
+{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    display: none;
+    z-index: 1000;
+}
+
+.login-modal-content
+{
+    background-color: white;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0;
+    border-radius: 25px;
+}
+
+.login-form
+{
+    text-align: left;
+    width: 100%;
+}
+
+.login-form div
+{
+    width:80%;
+    margin: auto;
+    margin-top: 10px;
+    font-size: large;
+}
+
+.login-form div button
+{
+    width: 100%;
+    font-size: large;
+    padding: 10px;
+    background-color: var(--bg-0);
+    color: white;
+    border-radius: 30px;
+    border: none;
+}
+
+.login-form input
+{
+    width: 96%;
+    padding: 5px;
+    font-size: large;
+    border-radius: 5px;
+    border: solid 1px gray;
+}
+
+.login-form input:active
+{
+    border-color:blue ;
+}
+
+.close
+{
+    text-align: left;
+    font-size: 3em;
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-0);
+    cursor: pointer;
+    color: white;
+    margin-top: -70px;
+    margin-bottom: 30px;
+    margin-left: 395px;
+}
+
+.close:hover
+{
+    background-color: var(--bg-0);
+}
+
+.a_forgotPassword
+{
+    padding: 1px 0;
+}
+
+.a_forgotPassword a
+{
+    color: rgb(49, 48, 48);
+    font-size: large;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.p-buttonBottom
+{
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+/*
+{
+    border: solid 1px red;
+}
