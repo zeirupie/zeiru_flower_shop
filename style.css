@@ -518,6 +518,11 @@ footer
         margin: auto;
         margin-top: 15px;
     }
+    
+    .assurance-binary-container img
+    {
+      height: 350px;
+    }
 
 } 
 
@@ -698,14 +703,14 @@ footer
 
     .aboutUs-section img
     {
-        width: 450px;
+        width: 380px;
         margin: auto;
         border-radius: 0;
     }
 
     .aboutUs-section div
     {
-        width: 390px;
+        width: 320px;
         margin: auto;
     }
 
@@ -747,14 +752,19 @@ footer
     .flower-section
     {
         flex-direction: column;
-        height: 570px;
+        height: 600px;
+    }
+    
+    .preview-flower-container
+    {
+      margin: 0;
+      margin: auto;
     }
 
     .preview-flower
     {
         width: 170px;
         height: 270px;
-        margin: 0;
         margin: 0 5px;
         margin-top: 50px;
     }
@@ -820,7 +830,7 @@ footer
     width: 17px;
 }
 
-.loginModal-container
+.loginModal-container,.signUpModal-container
 {
     width: 100%;
     height: 100vh;
@@ -835,25 +845,25 @@ footer
     z-index: 1000;
 }
 
-.login-modal-content
+.login-modal-content,.signUp-modal-content
 {
     background-color: white;
-    width: 400px;
+    width: 380px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 50px 0;
     border-radius: 25px;
+    padding-bottom: 30px;
 }
 
-.login-form
+.login-form,.signUp-form
 {
     text-align: left;
     width: 100%;
 }
 
-.login-form div
+.login-form div,.signUp-form div
 {
     width:80%;
     margin: auto;
@@ -861,7 +871,7 @@ footer
     font-size: large;
 }
 
-.login-form div button
+.login-form div button,.loginUsingGoogle,.signUp-form div button
 {
     width: 100%;
     font-size: large;
@@ -872,18 +882,13 @@ footer
     border: none;
 }
 
-.login-form input
+.login-form input,.signUp-form input
 {
     width: 96%;
     padding: 5px;
     font-size: large;
     border-radius: 5px;
     border: solid 1px gray;
-}
-
-.login-form input:active
-{
-    border-color:blue ;
 }
 
 .close
@@ -899,9 +904,9 @@ footer
     background-color: var(--bg-0);
     cursor: pointer;
     color: white;
-    margin-top: -70px;
-    margin-bottom: 30px;
-    margin-left: 395px;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    margin-left: 365px;
 }
 
 .close:hover
@@ -926,6 +931,34 @@ footer
 {
     padding: 10px 0;
     font-weight: bold;
+}
+
+.loginUsingGoogle 
+{
+  background-color: lightgray;
+  color: black;
+}
+
+.loginUsingGoogle-container
+{
+  width: 80%;
+}
+
+.p-ifNotLogin
+{
+  padding-top: 30px;
+  font-size: large;
+  }
+
+.p-ifNotLogin a
+{
+  color: blue;
+  text-decoration: underline blue;
+}
+
+.formCircleLogo img
+{
+  height: 100px;
 }
 
 /*

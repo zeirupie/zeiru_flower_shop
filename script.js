@@ -2,6 +2,7 @@
 //modal variables====
 const menuModal = document.getElementById("modal-navigation");
 const loginModal = document.getElementById("loginModal");
+const signUpModal = document.getElementById("signUpModal");
 
 
 const menuModalBtn = document.getElementById("menuBtn");
@@ -41,9 +42,10 @@ window.onresize = function()
 //-side nav bar modal==============
 
 
-//login form modal ==============
+//login register form modal ==============
 function openLoginModal()
 {
+    signUpModal.style.display="none";
     if(loginModal.style.display == "none" || loginModal.style.display == "")
     {
         loginModal.style.display="flex";
@@ -56,4 +58,21 @@ closebtn[0].onclick= function()
     loginModal.style.display="none";
 }
 
-//-login form modal ==============
+
+function openSignUpModal()
+{
+    loginModal.style.display="none";
+    if(signUpModal.style.display == "none" || signUpModal.style.display == "")
+    {
+        menuModal.style.display="none";
+        signUpModal.style.display="flex";
+        
+    }
+}
+
+closebtn[1].onclick= function()
+{
+    signUpModal.style.display="none";
+}
+
+//-login register form modal ==============
