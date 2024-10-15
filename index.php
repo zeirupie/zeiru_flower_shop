@@ -1,5 +1,5 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,155 +8,17 @@
     <link rel="stylesheet" href="fonts/all.css">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    <link rel="stylesheet" href="animation.css">
 </head>
+
 <body>
 
-    <header>
-            <i id="menuBtn" class="fas fa-bars"></i>
+    <?php require "components/header.php" ?>
 
-            <div class="modal-navigation " id="modal-navigation">
-                <div class="modal-navigation-content">
+    <?php require "auth/login_form.php" ?>
 
-                    <div class="loginRegster-container modal-loginRegister">
-                        <button onclick="openLoginModal()">Login</button>
-                        <button class="register-btn" onclick="openSignUpModal()">Register</button>
-                    </div>
-        
-                    <nav class="modal-nav">
-                        <ul>
-                            <li>Home</li>
-                            <li>Contact Us</li>
-                            <li>Bouquets</li>
-                            <li>Flowers</li>
-                        </ul> 
-                    </nav>
-                </div>
-            </div>
-
-
-        <img src="images/logoPngFlowerShop.png" alt="brand-picture">
-
-
-        <div class="header__iconButton-container">
-
-            <nav>
-                <ul class="nav__list">
-                    <li>Home</li>
-                    <li>Contact Us</li>
-                    <li>Bouquets</li>
-                    <li>Flowers</li>
-                </ul> 
-            </nav>
-
-            <div>
-                <i class="fas fa-shopping-cart"></i>
-            </div>
-
-            <div class="loginRegster-container">
-                <button onclick="openLoginModal()">Login</button>
-                <button class="register-btn"onclick="openSignUpModal()">Register</button>
-            </div>
-        </div>
-    </header>
-
-
-
-
-    <div class="loginModal-container" id="loginModal">
-
-        <div class="login-modal-content">
-            <span class="close">&times</span>
-            
-            <div class="formCircleLogo"><img src="images/circleLogo.png"></div>
-            <div><h1>Login</h1></div>
-
-            <form action="" class="login-form">
-                <div> 
-                    <label class="login-input">
-                        User name or email:<br>
-                        <input type="text" required>
-                    </label>
-                </div>
+    <?php require "auth/register_form.php" ?>
     
-                <div> 
-                    <label class="login-input">
-                        Password:<br>
-                        <input type="password" required>
-                    </label>
-                </div>
 
-                <div class="a_forgotPassword">
-                    <a href="#">Forgot your password?</a>
-                </div>
-
-                <div>
-                    <button type="submit"> Login</button>
-                </div>
-
-            </form>
-
-            <p class="p-buttonBottom">OR</p>
-            
-            <div class="loginUsingGoogle-container">
-                <button type="submit" class="loginUsingGoogle"> Google account
-                </button>
-            </div>
-            
-            <p class="p-ifNotLogin">Don't have an account yet?<a onclick="openSignUpModal()">Sign-up</a></p>
-        </div>
-    </div>
-    
-    <div class="signUpModal-container" id="signUpModal">
-
-        <div class="signUp-modal-content">
-            <span class="close">&times</span>
-            
-            <div class="formCircleLogo"><img src="images/circleLogo.png"></div>
-            <div><h1>Sign-up</h1></div>
-
-            <form action="" class="signUp-form">
-                <div> 
-                    <label class="signUp-input">
-                        User name or email:<br>
-                        <input type="text" required>
-                    </label>
-                </div>
-    
-                <div> 
-                    <label class="signUp-input">
-                        Password:<br>
-                        <input type="password" required>
-                    </label>
-                </div>
-                
-                <div> 
-                    <label class="signUp-input">
-                        Confirm password:<br>
-                        <input type="password" required>
-                    </label>
-                </div>
-
-                <div>
-                    <button type="submit"> Create Account</button>
-                </div>
-
-            </form>
-
-            <p class="p-buttonBottom">OR</p>
-            
-            <div class="loginUsingGoogle-container">
-                <button type="submit" class="loginUsingGoogle"> Google account
-                </button>
-            </div>
-            
-            <p class="p-ifNotLogin">Already have an account?<a onclick="openLoginModal()">Login</a></p>
-        </div>
-    </div>
-
-
-
-    
     <div class="hero">
         <div class="heroText-container"  >
             <h1>CRAFTING FRESH STARTS WITH EVERY FLOWER</h1>
@@ -168,7 +30,6 @@
     </div>
 
 
-
     <div class="aboutUs-section"  >
         <img src="images/florist-2.jpg" alt="">
         <div  >
@@ -176,7 +37,6 @@
             <p>Welcome to Zeiru Flower Shop, where elegance meets charm in every bouquet. Our curated selection of fresh, vibrant blooms is designed to elevate any occasion, whether it's a heartfelt celebration or a simple moment of beauty. With a passion for floral artistry, our skilled team crafts unique arrangements that reflect the beauty of nature and the individuality of our customers. At Zeiru, we believe that flowers are not just gifts but a way to express emotions and create lasting memories. Step into our enchanting shop and let us help you find the perfect floral expression for every moment.</p>
         </div>
     </div>
-
 
 
     <div class="boquet-section"  >
@@ -195,7 +55,6 @@
                 </div>
             </div>
     
-    
             <div class="boquet-binary-container" >
                 <div class="boquet-card"  >
                     <img src="images/aniverssary.jpg" alt="">
@@ -209,6 +68,7 @@
             </div>    
         </div>   
     </div>
+
     
     <div class="flower-section"  >
         <div class="flower-section-container"  >
@@ -233,7 +93,6 @@
             </div>
         </div>
     </div>
-
 
 
     <h1 class="heading-title"  >WHY CHOOSE OUR US?</h1>
@@ -265,6 +124,7 @@
         </div>
     </div>
 
+
     <div class="assurance-section">
         <div class="assurance-container"  >
              <div class="assurance-binary-container">
@@ -293,38 +153,7 @@
          </div>
      </div>
 
-
-     <footer>
-        <div class="footer-container"  >
-            <div>
-                <p>ZEIRU FLOWER SHOP</p>
-                <p>Follow us on our social media for the latest floral trends, exclusive offers, and more!</p>
-                <div class="footer-icons">
-                    <i class="fab fa-facebook"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-pinterest"></i>
-                </div>
-            </div>
-    
-            <div>
-                <p>NAVIGATION</p>
-                <p>
-                    <ul>
-                        <li class="footer-list">Home</li>
-                        <li class="footer-list">Contact Us</li>
-                        <li class="footer-list">Bouquets</li>
-                        <li class="footer-list">Flowers</li>
-                    </ul>
-                </p>
-            </div>
-        </div>
-
-        <div class="creditation">
-            <p>&copy; 2024 Zeiru Flower Shop. All rights reserved.</p>
-            <p>This website is intended for educational purposes. Some resources are credited to their respective owners.</p>
-        </div>
-        
-     </footer>
+     <?php require "components/footer.php" ?>
 
 </body>
 </html>
